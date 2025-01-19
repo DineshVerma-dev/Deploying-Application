@@ -6,7 +6,11 @@ import routes from './routes/route.js';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 
-dotenv.config();
+dotenv.config(
+ {
+     path: "./.env"
+ }
+);
 
 const app = express();
 const PORT = process.env.PORT || 3003;

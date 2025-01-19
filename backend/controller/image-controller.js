@@ -1,14 +1,9 @@
-// Initialize AWS SDK and get signed URLs for uploading images to S3
-// This function will be called when the user requests to upload an image
-// The function will return a signed URL that the user can use to upload the image to S3
-// The signed URL will be  valid for 60 seconds
-// The function will return an array of signed URLs for all the images that the user wants to upload
-// The function will return an error if it fails to get the signed URLs
-// The function will use the AWS SDK to interact with S3
 
 
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({
+     path: "./.env"
+});
 
 
 import AWS from 'aws-sdk';
