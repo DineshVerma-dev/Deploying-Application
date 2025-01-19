@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_URL = 'http://localhost:3003/api';
+const API_URL = 'https://deploying-application.vercel.app';
 
 export const getSignedUrls = async (files) => {
     try {
